@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+  // Taking user input
+  int terms,f1=0,f2=1,f3;
+  printf("Enter the numbers of terms:");
+  scanf("%d",&terms);
+  printf("%d%d",f1,f2);
+  // Using loops
+  do {
+    f3 = f1+f2;
+    printf("%d",f3);
+    f1=f2;
+    f2=f3;
+    terms--;
+  } while(terms>2);
+  return 0;
+
+}
