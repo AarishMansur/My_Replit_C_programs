@@ -1,0 +1,13 @@
+              //  WAP to take input 5 integers and then add them
+
+#include<stdio.h>
+int main(){
+  int number,sum_digit;
+  // Taking user input
+
+  printf("Write 5 digit number :");
+  scanf("%d",&number);
+  // Output
+  sum_digit = number%10+((number/10)%10)+((number/100)%10)+((number/1000)%10)+((number/10000)%10);
+  printf("The Sum of 5 digits is :%d",sum_digit);
+}
