@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+  int num,remainder,reverse=0,original;
+  // Taking user input
+  printf("Enter a number :");
+  scanf("%d",&num);
+  original=num;
+  //  Using while loop
+  while(num!=0){
+    remainder = num%10;
+    reverse = reverse*10 + remainder;
+    num/=10;
+  }
+  printf("The reverse of number is :%d ",reverse);
+  // Using if condition 
+  if(original==reverse){
+    printf("The number is palindrome.");
+  }
+  else {
+    printf("The number is not palindrome.");
+  }
+
+}
