@@ -1,0 +1,33 @@
+# include<stdio.h>
+// Using eclidian algorithem
+int gcd(int x,int y){
+while(y!=){
+int remainder = x%y;
+x=y;
+y=remainder;
+}
+return x;
+}
+int main(){
+int a,b;
+printf("Enter number a and b :");
+scanf("%d%d",&a,&b);
+printf("GCD of a and b is %d",gcd(a,b));
+}
+
+// Using brute force method
+int gcd2(int x,int y){
+int gcd=1;
+for(int i=1;i<=(x<y?x:y);i++){
+if(x%i==0 && y%i==0){
+gcd = i;
+}
+}
+return gcd;
+}
+int main(){
+int a,b;
+printf("Enter number a and b ");
+scanf("%d%d",&a,&b);
+printf("The value of GCD is %d",gcd2(a,b));
+}
