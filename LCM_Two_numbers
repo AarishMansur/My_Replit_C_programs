@@ -1,0 +1,20 @@
+// #include<stdio.h>
+// int gcd(int a,int b){
+//   while(b!=0){
+//   int remainder = a%b;
+//   a=b;
+//   b= remainder;
+//   }
+//   return a;
+// }
+// int lcm(int a,int b){
+//   return  (a*b)/gcd(a,b);
+// }
+// int main(){
+//   int x,y;
+//   printf("Enter the number a :");
+//   scanf("%d",&x);
+//   printf("Enter the number b:");
+//   scanf("%d",&y);
+//   printf("LCM of %d and %d is = %d",x,y,lcm(x,y));
+// }
