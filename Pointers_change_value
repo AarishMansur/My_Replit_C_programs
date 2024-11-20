@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+  int num = 10;
+  int *ptr = &num;
+  printf("Value of adress is :%u\n",ptr);
+  printf("Value of pointer is :%d\n",*ptr);
+  // Changing value of num using pointer 
+  *ptr = 20;
+  printf("Value after changing it of pointer :%d",*ptr);
+}
