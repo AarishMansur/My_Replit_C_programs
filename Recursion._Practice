@@ -1,0 +1,144 @@
+Practice -1 Factorial finding  
+
+#include<stdio.h>
+int fact(int x){
+  if(x==0 || x==1){
+    return 1;
+  }
+  else{
+    return x * fact(x-1);
+  }
+}
+int main(){
+  int n;
+  printf("Enter a number :");
+  scanf("%d",&n);
+  printf("The factorial of number is = %d",fact(n));
+}
+
+Practice -2 Sum of digits 
+#include<stdio.h>
+int rec_sum(int x){
+  int sum;
+  if(x>0){
+    int remainder = x%10;
+     sum = remainder + rec_sum(x/10);
+  }
+  else {
+    return 0;
+  }
+  return sum;
+}
+int main(){
+  int n;
+  printf("Write a 5 digit number :");
+  scanf("%d",&n);
+  printf("The sum of digit numbers is = %d",rec_sum(n));
+  return 0;
+}
+
+Practice -3 Power x raise to y 
+#include<stdio.h>
+int raise(int x, int y){
+  if(y==0 || x==1){
+    return 1 ;
+  }
+  else{
+    return x * raise(x,y-1);
+  }
+} 
+int main(){
+  int a,b;
+  printf("Enter number :");
+  scanf("%d",&a);
+  printf("Enter its power :");
+  scanf("%d",&b);
+  printf("Answer is : %d",raise(a,b));
+}
+
+Practice - 4 Reverse counting 
+#include<stdio.h>
+int rev(int x){
+  if(x==1 ){
+    printf("1") ;
+  }
+  else{
+    printf("%d\n",x);
+    return  rev(x-1);
+  }
+}
+int main(){
+  int a;
+  printf("Enter a number : ");
+  scanf("%d",&a);
+  rev(a);
+}
+
+Practice - 5 Greatest common divisors 
+#include<stdio.h>
+int gcd(int x,int y ){
+  if(x==0  ){
+   printf("The greatest Common Divisor is %d",y);
+  }
+  else if(y==0){
+    printf("The Greatest Common Divisor is %d",x);
+  }
+  else{
+    int remainder = x%y;
+    return gcd(x=y,y=remainder);
+    printf("The Greatest common Divisor is = %d",gcd(x,y));
+  }
+}
+int main(){
+  int a,b;
+  printf("Enter number a :");
+  scanf("%d",&a);
+  printf("Enter number b :");
+  scanf("%d",&b);
+gcd(a,b);
+}
+
+Chatgpt code 
+
+#include<stdio.h>
+int gcd(int x,int y ){
+  if(y==0){
+    return x;
+  }
+  else{
+    return gcd(y,x%y);
+  }
+}
+int main(){
+  int a,b;
+  printf("Enter number a:");
+  scanf("%d",&a);
+  printf("Enter number b :");
+  scanf("%d",&b);
+ printf("%d",gcd(a,b));
+}
+
+Dhruv code of plaindrome or not 
+#include<stdio.h>
+int reversed(int n ,int rev){
+  int rem =0;
+  if(n==0){
+    return rev;
+  }
+  rem = n%10;
+  rev = rev *10 + rem;
+  n=n/10;
+  return reversed(n,rev);
+}
+int main(){
+  int a,r;
+  printf("Enter a number :");
+  scanf("%d",&a);
+  r = reversed(a,0);
+  if(r==a){
+    printf("The number is palindrome ");}
+    else{
+    printf("The number is not palindrome");
+    }
+  
+}
