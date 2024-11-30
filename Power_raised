@@ -1,4 +1,4 @@
- WAP to find x raised to power y
+ WAP to find x raised to power y.
  #include<stdio.h>
  int main(){
     int x,y,power;
