@@ -1,6 +1,6 @@
-#inclue<stdio.h>
+#include<stdio.h>
 int main(){
-  int num[] = {1,3,5,6,8,9,9,9,4,6,5,4,};
+  int num[15] = {1,3,5,6,8,9,9,9,4,6,5,4,};
   int n,i,count;
   printf("Enter An element to search :");
   scanf("%d",&n);
