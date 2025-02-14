@@ -12,7 +12,6 @@ int main(){
     reverse = reverse*10 + remainder;
     num/=10;
   }
-  printf("The reverse of number is :%d ",reverse);
   // Using if condition 
   if(original==reverse){
     printf("The number is palindrome.");
