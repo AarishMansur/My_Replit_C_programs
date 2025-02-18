@@ -1,5 +1,5 @@
 # include<stdio.h>
-// Using eclidian algorithem
+// Using eclidian algorithem of GCD
 int gcd(int x,int y){
 while(y!=){
 int remainder = x%y;
