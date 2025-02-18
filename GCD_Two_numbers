@@ -9,10 +9,10 @@ y=remainder;
 return x;
 }
 int main(){
-int a,b;
-printf("Enter number a and b :");
-scanf("%d%d",&a,&b);
-printf("GCD of a and b is %d",gcd(a,b));
+int c,d;
+printf("Enter number c and d :");
+scanf("%d%d",&c,&d);
+printf("GCD of c and d is %d",gcd(c,d));
 }
 
 // Using brute force method
